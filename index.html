@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Space Photos  </title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1 align="center"> The Project of Images Space </h1>
+        <h5 align="center"> name: yazan majed AL-qahtani </h5>
+        <div class="full-img" id="fullImgBox">
+            <img src="img/f1.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+
+        <div class="img-gallery">
+            <img src="img/f1.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+            <img src="img/f2.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+            <img src="img/f3.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+            <img src="img/f4.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+            <img src="img/f5.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+            <img src="img/f6.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+            <img src="img/f7.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+            <img src="img/f8.jpg" width="200" height="150" onclick="openFullImg(this.src)">
+        </div>
+        <script>
+
+         var fullImgBox = document.getElementById("fullImgBox");
+         var fullImg = document.getElementById("fullImg");
+
+            function openFullImg(yazan) {
+            fullImgBox.style.display = "flex";
+            fullImg.src = yazan ;
+         }
+         function closeFullImg() {
+            fullImgBox.style.display = "none";
+         } 
+
+        </script>
+    </body>
+</html>
